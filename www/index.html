@@ -12,13 +12,54 @@
         <title>SoLaWi</title>
     </head>
     <body>
+    <!-- HIER BEGINNT DAS SIDE MENU -->
+		<div data-role="panel" id="panel-1">
+			<ul data-role="listview" id="listview-1">
+				<li><a href="#page-1">Abholungsantwort verfassen</a></li>
+				<li><a href="#page-2">Abholerliste</a></li>
+				<li><a href="#page-3">Problemmeldung verfassen</a></li>
+				<li><a href="#page-4">Problemmeldungen</a></li>
+				<li><a href="#page 5">Abholeranzahl anzeigen</a></li>
+				<li><a href="#page-6">Datenblätter</a></li>
+				<li><a href="#page-7">Verlinkungen</a></li>
+			</ul>
+		</div>
 		<div data-role="page" id="page-1">
 			<div data-role="header">
-				<h1>Anmeldung</h1>
+		<div data-role="page" id="page-1">
+		</div>
+			<div data-role="header">
+<!-- MENU BUTTON FÜR JEDE PAGE -->
+				<a href="#panel-1" id="button-1" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Menu</a>
+				</b><h1>Anmeldung</h1>
 			</div>
+<!-- Hier beginnt der Content -->
 			<div data-role="content">
-				<p>Page content goes here!</p>
+				<div class="ui-field-contain">
+					<label for="text-1"></label>
+					<input name="text-1" id="text-1" data-clear-btn="true" value="" placeholder="Benutzername" required="true" type="text"/>
+					<div class="ui-field-contain">
+						<label for="text-2"></label>
+						<input name="text-2" id="text-2" data-clear-btn="true" value="" placeholder="Passwort" required="true" type="text"/>
+					</div>
+				</div>
+			</div>
+<!-- Hier beginnt der Footer -->			
+			<div data-role="footer" id="footer-1" data-position="fixed" data-fullscreen="true" class="ui-bar">
+				<div data-role="controlgroup" data-type="horizontal" class="ui-mini">
+					<a href="#panel-1" id="buttonBeenden" class="ui-btn">Beenden</a>
+					<a href="#panel-1" id="buttonAnmelden" class="ui-btn" >Anmelden</a>
+				</div>
 			</div>
 		</div>
-    </body>
+<!-- BEGINN NEUE PAGE -->				
+				<h1>Willkommen</h1>
+			</div>
+			<div data-role="content">
+				<p>Der Login war erfolgreich!</p>
+				
+			</div>
+			
+		</div>
+	</body>
 </html>
