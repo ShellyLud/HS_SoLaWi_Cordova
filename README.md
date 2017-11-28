@@ -1,3 +1,3 @@
 # HS_SoLaWi_Cordova
 
-Test von Patrick
+Test von Patrick!
