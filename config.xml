@@ -3,11 +3,13 @@
 	xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>HS So La Wi Cordova</name>
 	<description>
-		A sample Apache Cordova application that responds to the deviceready
+		A sample Apache Cordova application that responds to the
+		deviceready
 		event.
 	</description>
 	<author href="http://www.eclipse.org/thym" email="thym-dev@eclipse.org">
-		Eclipse.org - Thym
+		Eclipse.org -
+		Thym
 	</author>
 
 	<content src="index.html" />
@@ -27,5 +29,5 @@
 		<allow-intent href="itms:*" />
 		<allow-intent href="itms-apps:*" />
 	</platform>
-	<engine name="android" spec="6.5.0-nightly.2017.11.20.64047801" />
-</widget>
+	
+<engine name="android" spec="6.5.0-nightly.2017.11.22.64047801" /><engine name="ios" spec="4.6.0-nightly.2017.11.22.24bfb734" /></widget>
