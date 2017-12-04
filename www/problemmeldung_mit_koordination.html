@@ -15,14 +15,13 @@
 <!-- HIER BEGINNT DAS SIDE MENU -->
 		<div data-role="panel" id="panel-1">
 			<ul data-role="listview" id="listview-1">
-				<li><a href="http://localhost:64598/abholungsantwort.html">Abholungsantwort verfassen</a></li>
-				<li><a href="http://localhost:64598/abholerliste.html">Abholerliste</a></li>
-				<li><a href="http://localhost:64598/problemmeldung_mit_koordination.html">Problemmeldung mit Koordination verfassen</a></li>
-				<li><a href="http://localhost:64598/problemmeldung_ohne_koordination.html">Problemmeldung ohne Koordination verfassen</a></li>
-				<li><a href="http://localhost:64598/problemmeldungen.html">Problemmeldungen </a></li>
-				<li><a href="http://localhost:64598/abholeranzahl.html">Abholeranzahl anzeigen</a></li>
-				<li><a href="http://localhost:64598/datenblaetter.html">Datenblaetter</a></li>
-				<li><a href="http://localhost:64598/verlinkungen.html">Verlinkungen</a></li>
+				<li><a href="abholungsantwort.html">Abholungsantwort verfassen</a></li>
+				<li><a href="abholerliste.html">Abholerliste</a></li>
+				<li><a href="problemmeldung_auswahl.html">Problemmeldung verfassen</a></li>
+				<li><a href="problemmeldungen.html">Problemmeldungen</a></li>
+				<li><a href="abholeranzahl.html">Abholeranzahl anzeigen</a></li>
+				<li><a href="datenblaetter.html">Datenbl&auml;tter</a></li>
+				<li><a href="verlinkungen.html">Verlinkungen</a></li>
 			</ul>
 		</div>
 		<div data-role="page" id="page-1">
@@ -31,46 +30,35 @@
 		</div>
 			<div data-role="header">
 <!-- MENU BUTTON FUER JEDE PAGE -->
-				<a href="#panel-1" id="button-1" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Menu</a>
-				</b><h1>Anmeldung</h1>
+				<a href="#panel-1" id="button-1" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Men&uuml;</a>
+				</b><h1>Problemmeldung mit Koordination</h1>
 			</div>
 <!-- Hier beginnt der Content -->
-			<div data-role="content">
+			<div>
+				<label for="textarea-1">Nachricht an Mitglieder:</label>
+				<textarea name="textarea-1" id="textarea-1" data-clear-btn="true" placeholder="Beschreibung des Problems" cols="40" rows="8"></textarea>
+			</div>
+			<div>
 				<div class="ui-field-contain">
-					<label for="text-1"></label>
-					<input name="text-1" id="text-1" data-clear-btn="true" value="" placeholder="Benutzername" required="true" type="text"/>
-					<div class="ui-field-contain">
-						<label for="text-2"></label>
-						<input name="text-2" id="text-2" data-clear-btn="true" value="" placeholder="Passwort" required="true" type="text"/>
-					</div>
+					<label for="date-1">Terminvorschlag 1:</label>
+					<input name="date-1" id="date-1" data-clear-btn="true" value="" placeholder="Beispiel 04.12.2017" type="date"/>
 				</div>
-			</div>
-<!-- Hier beginnt der Footer -->			
-			<div data-role="footer" id="footer-1" data-position="fixed" data-fullscreen="true" class="ui-bar">
-				<div data-role="controlgroup" data-type="horizontal" class="ui-mini">
-					<a href="#panel-1" id="buttonBeenden" class="ui-btn">Beenden</a>
-					<a href="#panel-1" id="buttonAnmelden" class="ui-btn" >Anmelden</a>
+				<div class="ui-field-contain">
+					<label for="date-2">Terminvorschlag 2:</label>
+					<input name="date-2" id="date-2" data-clear-btn="true" value="" placeholder="Beispiel 04.12.2017" type="date"/>
 				</div>
+				<div class="ui-field-contain">
+					<label for="date-3">Terminvorschlag 3:</label>
+					<input name="date-3" id="date-3" data-clear-btn="true" value="" placeholder="Beispiel 04.12.2017" type="date"/>
+				</div>
+			
 			</div>
-		</div>
-<!-- BEGINN NEUE PAGE -->				
-				<h1>Willkommen</h1>
+			<div>
+				<div class="ui-field-contain">
+					<label for="text-1">Anzahl ben�tigter Helfer:</label>
+					<input name="text-1" id="text-1" data-clear-btn="true" value="" type="text"/>
+				</div>
+			
 			</div>
-			<div data-role="content">
-				<p>Der Login war erfolgreich!</p>
-				<p>Das Menü ist oben links erreichbar.</p>
-			</div>
-		</div>
-	</body>
-	 <body>
-        <div class="app">
-            <h1>Solawi</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Verbinde zum Gerät</p>
-                <p class="event received">Gerät ist bereit</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

@@ -15,14 +15,13 @@
 <!-- HIER BEGINNT DAS SIDE MENU -->
 		<div data-role="panel" id="panel-1">
 			<ul data-role="listview" id="listview-1">
-				<li><a href="http://localhost:64598/abholungsantwort.html">Abholungsantwort verfassen</a></li>
-				<li><a href="http://localhost:64598/abholerliste.html">Abholerliste</a></li>
-				<li><a href="http://localhost:64598/problemmeldung_mit_koordination.html">Problemmeldung mit Koordination verfassen</a></li>
-				<li><a href="http://localhost:64598/problemmeldung_ohne_koordination.html">Problemmeldung ohne Koordination verfassen</a></li>
-				<li><a href="http://localhost:64598/problemmeldungen.html">Problemmeldungen </a></li>
-				<li><a href="http://localhost:64598/abholeranzahl.html">Abholeranzahl anzeigen</a></li>
-				<li><a href="http://localhost:64598/datenblaetter.html">Datenblaetter</a></li>
-				<li><a href="http://localhost:64598/verlinkungen.html">Verlinkungen</a></li>
+				<li><a href="abholungsantwort.html">Abholungsantwort verfassen</a></li>
+				<li><a href="abholerliste.html">Abholerliste</a></li>
+				<li><a href="problemmeldung_auswahl.html">Problemmeldung verfassen</a></li>
+				<li><a href="problemmeldungen.html">Problemmeldungen</a></li>
+				<li><a href="abholeranzahl.html">Abholeranzahl anzeigen</a></li>
+				<li><a href="datenblaetter.html">Datenbl&auml;tter</a></li>
+				<li><a href="verlinkungen.html">Verlinkungen</a></li>
 			</ul>
 		</div>
 		<div data-role="page" id="page-1">
@@ -31,46 +30,45 @@
 		</div>
 			<div data-role="header">
 <!-- MENU BUTTON FUER JEDE PAGE -->
-				<a href="#panel-1" id="button-1" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Menu</a>
-				</b><h1>Anmeldung</h1>
+				<a href="#panel-1" id="button-1" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Men&uuml;</a>
+				</b><h1>Problemmeldungen</h1>
 			</div>
 <!-- Hier beginnt der Content -->
-			<div data-role="content">
-				<div class="ui-field-contain">
-					<label for="text-1"></label>
-					<input name="text-1" id="text-1" data-clear-btn="true" value="" placeholder="Benutzername" required="true" type="text"/>
-					<div class="ui-field-contain">
-						<label for="text-2"></label>
-						<input name="text-2" id="text-2" data-clear-btn="true" value="" placeholder="Passwort" required="true" type="text"/>
-					</div>
-				</div>
+			<div>
+				<table data-role="table" id="table-1" class="ui-responsive">
+					<thead>
+						<tr>
+							<th data-priority="1">Nr</th>
+							<th data-priority="1">Problem</th>
+							<th data-priority="2">ben�tigte Helfer</th>
+							<th data-priority="3">Zusagen</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Folientunnel aufbauen</td>
+							<td>11</td>
+							<td>5</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-<!-- Hier beginnt der Footer -->			
-			<div data-role="footer" id="footer-1" data-position="fixed" data-fullscreen="true" class="ui-bar">
-				<div data-role="controlgroup" data-type="horizontal" class="ui-mini">
-					<a href="#panel-1" id="buttonBeenden" class="ui-btn">Beenden</a>
-					<a href="#panel-1" id="buttonAnmelden" class="ui-btn" >Anmelden</a>
-				</div>
+			<div>
+				<fieldset data-role="controlgroup" data-iconpos="left" id="checkboxes-1">
+					<legend></legend>
+					<input name="checkbox-1a" id="checkbox-1a" type="checkbox"/>
+					<label for="checkbox-1a">Ich komme helfen</label>
+					<input name="checkbox-1b" id="checkbox-1b" type="checkbox"/>
+					<label for="checkbox-1b">Termin 1</label>
+					<input name="checkbox-1c" id="checkbox-1c" type="checkbox"/>
+					<label for="checkbox-1c">Termin 2</label>
+					<input name="checkbox-1d" id="checkbox-1d" type="checkbox"/>
+					<label for="checkbox-1d">Termin 3</label>
+					<input name="checkbox-1e" id="checkbox-1e" type="checkbox"/>
+					<label for="checkbox-1e">Ich komme nicht helfen</label>
+				</fieldset>
 			</div>
-		</div>
-<!-- BEGINN NEUE PAGE -->				
-				<h1>Willkommen</h1>
-			</div>
-			<div data-role="content">
-				<p>Der Login war erfolgreich!</p>
-				<p>Das Menü ist oben links erreichbar.</p>
-			</div>
-		</div>
-	</body>
-	 <body>
-        <div class="app">
-            <h1>Solawi</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Verbinde zum Gerät</p>
-                <p class="event received">Gerät ist bereit</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+
     </body>
 </html>
