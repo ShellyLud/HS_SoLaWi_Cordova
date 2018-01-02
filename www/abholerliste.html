@@ -31,10 +31,34 @@
 			<div data-role="header">
 <!-- MENU BUTTON FUER JEDE PAGE -->
 				<a href="#panel-1" id="button-1" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Men&uuml;</a>
-				</b><h1>Abholerliste</h1>
+				<h1>Abholerliste</h1>
 			</div>
 <!-- Hier beginnt der Content -->
-
+<form>
+	<input data-type="search" id="searchForTable-1"/>
+</form>
+<table data-role="table" id="table-abholerliste" data-mode="columntoggle" data-filter="true" data-input="#searchForTable-1" class="ui-body-a ui-responsive table-stripe">
+	<thead>
+		<tr class="ui-bar-a">
+			<th data-priority="1">Nachfrage</th>
+			<th data-priority="1">Mitbringer</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Jona Braucht0</td>
+			<td>Dennis Bringt0</td>
+		</tr>
+		<tr>
+			<td>Jona Braucht mehr mehr mehr</td>
+			<td>Dennis Bringt1</td>
+		</tr>
+		<tr>
+			<td>Jona Braucht2</td>
+			<td>Dennis Bringt2</td>
+		</tr>
+	</tbody>
+</table>
 
 
     </body>
